@@ -1,9 +1,38 @@
-<!doctype html>
-<html>
-  <head>
-    <title>Webpack Package</title>
-  </head>
-  <body>
-    <div id="point"></div>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <title>Rock, Paper and Scissors</title>    
+</head>
+<body>
+    <div class="layout-black"></div>
+    <button class="start">Ok</button>
+    <div class="container">
+        <header class="text-align-center"> Rock Paper Scissors Game</header>
+        <div class="text-align-center">Play vs computer also one of reached 5 scores</div>
+        <div class="scores-table flex-center">
+            <div class="scores m-30 text-align-center vertical-align">
+                <p class="player-scores" style="margin-top:30%">0</p>
+            </div>
+            <div class="scores m-30 text-align-center vertical-align">
+                <p class="computer-scores" style="margin-top:30%">0</p>
+            </div>
+        </div>
+        <div class="gamer-choose flex-center">
+            <div class="scores m-30 text-align-center vertical-align">
+                <p class="player-choose" style="margin-top:30%"></p>
+            </div>
+            <div class="scores m-30 text-align-center vertical-align">
+                <p class="computer-choose" style="margin-top:30%"></p>
+            </div>
+        </div>
+        <div class="player-card flex-center gap-20">
+            <button id="rock" class="game btn rock">👊</button>
+            <button id="paper" class="game btn paper">🤚</button>
+            <button id="scissors" class="game btn scissors">✌️</button>
+        </div>
+    </div>
+</body>
 </html>

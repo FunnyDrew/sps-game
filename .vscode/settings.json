@@ -1,0 +1,6 @@
+{
+    "makefile.extensionOutputFolder": "./.vscode",
+    "[javascript]": {
+        "editor.tabSize": 2
+    }
+}

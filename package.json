@@ -2,7 +2,6 @@
   "name": "sps-game",
   "version": "0.1.0",
   "description": "",
-  "type": "module",
   "scripts": {
     "test": "jest --colors"
   },
@@ -11,7 +10,7 @@
     "url": "https://github.com/FunnyDrew/sps-game"
   },
   "author": "Andrey Rybin",
-  "license": "ISC",  
+  "license": "ISC",
   "jest": {
     "verbose": true,
     "testURL": "http://localhost/",
@@ -44,7 +43,9 @@
     "webpack-dev-server": "^4.1.1"
   },
   "dependencies": {
+    "i18next": "^21.8.9",
     "npm-check-updates": "^11.8.5",
+    "onchange": "^7.1.0",
     "sass": "^1.39.0",
     "sass-loader": "^12.1.0"
   }
