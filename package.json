@@ -1,5 +1,5 @@
 {
-  "name": "webpack-package",
+  "name": "sps-game",
   "version": "0.1.0",
   "description": "",
   "type": "module",
@@ -8,14 +8,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hexlet-boilerplates/webpack-package.git"
+    "url": "https://github.com/FunnyDrew/sps-game"
   },
-  "author": "Kirill Mokevnin",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/hexlet-boilerplates/webpack-package/issues"
-  },
-  "homepage": "https://github.com/hexlet-boilerplates/webpack-package#readme",
+  "author": "Andrey Rybin",
+  "license": "ISC",  
   "jest": {
     "verbose": true,
     "testURL": "http://localhost/",
