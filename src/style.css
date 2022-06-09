@@ -1,3 +1,12 @@
+:root {
+  --dark: #0e0d3a;
+  --dark-blue: #262940;
+  --orange: #ffb700;
+  --green: #00655e;
+  --blue-green: #619c9d;
+  --light-grey: #f5ffff;
+
+}
 @font-face {
   font-family: "Roboto";
   src: url("Roboto-Regular.ttf");
@@ -6,16 +15,17 @@
 body {
   display: flex;
   justify-content: center;
-  gap: 10vw;
 
   width: 100vw;
-  height: 100vw;
+  height: 100vh;
+
+  margin: 0;
 
   box-sizing: border-box;
 
   font-family: "Roboto", sans-serif;
 
-  background-color: darkgoldenrod;
+  background-color: var(--dark-blue);
 }
 
 .flex-center {
@@ -27,8 +37,8 @@ body {
   gap: 20px;
 }
 
-.gap {
-  gap: 50px;
+.h-30 {
+  height: 30px;
 }
 
 .text-align-center {
@@ -45,6 +55,32 @@ body {
 
 .m-auto {
   margin: 0 auto;
+}
+
+.bg-dark {
+  background: var(--dark);
+}
+
+.font-24 {
+  font-size: 24px;
+}
+
+.color-light {
+  color: var(--light-grey);  
+}
+
+.color-blue-green {
+  color: var(--blue-green);  
+}
+
+.color-blue-green {
+  color: var(--orange);  
+}
+
+header {
+  min-width: 100vw;
+
+  box-shadow: 10px 5px 5px black;
 }
 
 .btn {

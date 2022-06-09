@@ -4,35 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">    
-    <title>Rock, Paper and Scissors</title>    
+    <title></title>    
 </head>
-<body>
+<body>    
     <div class="layout-black"></div>
-    <button class="start">Ok</button>
+    <header class="text-align-center h-30 color-light bg-dark">Rock Paper Scissors</header>
+        
     <div class="container">
-        <header class="text-align-center"> Rock Paper Scissors Game</header>
-        <div class="text-align-center">Play vs computer also one of reached 5 scores</div>
-        <div class="scores-table flex-center">
+      <!--  <div class="game-rules"></div>
+        <button class="btn-start"></button> -->        
+
+        <button class="lng">EN</button>
+
+        <div class="game-play-title text-align-center">Game Play</div>
+        <div class="game-play-content text-align-center">Stone bits Scissors</div>
+
+        <div class="scores-play-title text-align-center">Scores</div>
+
+        <div class="play-scores scores-table flex-center">
             <div class="scores m-30 text-align-center vertical-align">
-                <p class="player-scores" style="margin-top:30%">0</p>
+                <p class="player-scores" style="margin-top:30%">1</p>
             </div>
             <div class="scores m-30 text-align-center vertical-align">
-                <p class="computer-scores" style="margin-top:30%">0</p>
+                <p class="computer-scores" style="margin-top:30%">1</p>
             </div>
         </div>
-        <div class="gamer-choose flex-center">
+
+        <div class="players-choice flex-center">
             <div class="scores m-30 text-align-center vertical-align">
-                <p class="player-choose" style="margin-top:30%"></p>
+                <p class="player-choice" style="margin-top:30%">👊</p>
             </div>
             <div class="scores m-30 text-align-center vertical-align">
-                <p class="computer-choose" style="margin-top:30%"></p>
+                <p class="computer-choice" style="margin-top:30%">👊</p>
             </div>
         </div>
-        <div class="player-card flex-center gap-20">
+        <div class="game-cards flex-center gap-20">
             <button id="rock" class="game btn rock">👊</button>
-            <button id="paper" class="game btn paper">🤚</button>
-            <button id="scissors" class="game btn scissors">✌️</button>
+            <button id="paper" class="game btn paper">👊</button>
+            <button id="scissors" class="game btn scissors">👊</button>
         </div>
+
+        <!--<button class="btn-end"></button>-->
     </div>
 </body>
 </html>
