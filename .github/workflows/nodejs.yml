@@ -40,7 +40,4 @@ jobs:
           CI: true
 
       - name: Run linter
-        run: make lint
-
-      - name: Run tests
-        run: make test
+        run: make lint      
