@@ -7,15 +7,24 @@
     <link rel="stylesheet" href="./src/style.css">
     <title>Rock Paper Scissors</title>    
 </head>
-<body>    
-    <div class="layout-black"></div>
+<body>       
     <header class="text-align-center bg-dark flex-center">
         <p>Rock Paper Scissors</p>
     </header>
         
-    <div class="container">
-      <!--  <div class="game-rules"></div>
-        <button class="btn-start"></button> -->        
+    <div class="container"> 
+        <div class="game-intro active">
+            <btn class="lng corner">EN</btn>           
+            <div class="game-info">
+                <p class="game-info-name">Rock Paper Scissors Game</p>
+                <p class="game-info-make">Make a move to choose one of the variants: stone, scissors or paper. The computer will choose your choice at random.</p>
+                <p class="game-info-rs">Rock blunt scissors</p>
+                <p class="game-info-sp">Scissors blunt paper</p>
+                <p class="game-info-pr">Paper wraps a rock.</p>
+                <p class="game-info-win">The winner of step is awarded 1 point. Whoever gets 5 points fastest wins.</p>
+            </div>
+            <btn class="game-start">Start Game</btn>
+        </div>    
 
         <button class="lng">EN</button>
 
@@ -24,26 +33,36 @@
 
         <div class="scores-play-title text-align-center mtb-10px color-light font-18">Scores</div>
 
-        <div class="play-scores flex-center">
-            <div class="scores text-align-center vertical-align">
+        <div class="play-scores flex-between w-200">
+            <div class="scores text-align-center vertical-align w-75">
                 <p class="player-scores font-12 color-blue-green" >You</p>
-                <p class="player-scores" >1</p>
+                <div class="player-scores round-border font-36 color-oragnge" >
+                    <p>1</p>
+                </div>
             </div>
-            <div class="scores text-align-center vertical-align">
+            <div class="scores text-align-center vertical-align w-75">
                 <p class="player-scores font-12 color-blue-green">Computer</p>
-                <p class="computer-scores">1</p>
+                <div class="computer-scores round-border font-36 color-oragnge">
+                    <p>1</p>
+                </div>
             </div>
         </div>
 
-        <div class="players-choice flex-center">
-            <div class="scores m-30 text-align-center vertical-align">
-                <p class="player-choice" style="margin-top:30%">👊</p>
+        <div class="players-choice-title text-align-center mt-30 color-light font-18">Players Choice</div>
+
+        <div class="players-choice flex-between w-200">
+            <div class="scores m-0-20 text-align-center vertical-align">
+                <p class="player-choice font-24">👊</p>
             </div>
-            <div class="scores m-30 text-align-center vertical-align">
-                <p class="computer-choice" style="margin-top:30%">👊</p>
+            <div class="scores m-0-20 text-align-center vertical-align">
+                <p class="computer-choice font-24">👊</p>
             </div>
         </div>
-        <div class="game-cards flex-center gap-20">
+
+        <div class="game-cards-title text-align-center color-light font-18">Game Cards</div>
+        <div class="game-cards-info text-align-center color-blue-green font-12">(Select your next step)</div>
+
+        <div class="game-cards flex-center mt-30 gap-20">
             <button id="rock" class="game btn rock">👊</button>
             <button id="paper" class="game btn paper">👊</button>
             <button id="scissors" class="game btn scissors">👊</button>
