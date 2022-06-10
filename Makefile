@@ -15,10 +15,10 @@ lint:
 	npx eslint .
 
 lint_css: 
-	npx htmlhint *.html ./src/pages/*.html
-	npx stylelint ./src/styles/*.css ./src/styles/pages_styles/*.css
+	npx htmlhint *.html 
+	npx stylelint ./src/*.css 
 
 sync:
-	npx browser-sync start -s  --files 'src/pages/*.html'
+	npx browser-sync start -s   --files '*.html, src/*.css'
 
 .PHONY: test
