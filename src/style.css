@@ -7,8 +7,8 @@
   --light-green: #007e5e;
   --blue-green: #619c9d;
   --light-grey: #c0c9c9;
-  --layout-bg: #1A0020;
-  --dark-green: #00332F;
+  --layout-bg: #1a0020;
+  --dark-green: #00332f;
   --dark-layout: rgb(55 54 49 / 85%);
 
 }
@@ -214,7 +214,7 @@ button.game {
   font-size: 50px;
 }
 
-.game-intro {  
+.game-modal {  
   position: absolute;
   top: 0;
   left: 0;
@@ -228,15 +228,62 @@ button.game {
   height: 100vh;
   margin: 0;  
 
-  background: var(--dark-blue-op75);
+  background: var(--dark-layout);
 }
 
-.game-intro.active {
+.game-modal.active {
   display: flex;
 }
 
-.game-info {
+.game-modal-windows {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   min-width: 300px;
-  height:300px;
-  background: var(--dark);
+  max-width: 40vw;
+
+  padding: 0px 30px 0px 30px;
+  background: var(--dark-green);
+  font-size: 21px;
+  color: var(--light-grey);
+  border: 2px solid var(--orange);
+  border-radius: 5px;
+
+  box-shadow: 0 0 25px 1px rgb(0 0 0 / 75%), inset 0 0 10px rgb(0 0 0 / 15%);
+}
+
+.game-result-info {
+  text-align: center;
+}
+
+.corner {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 10px;  
+  right: 10px;
+}
+
+.game-info-name {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.game-start {
+  width: 120px;
+  height: 50px;
+
+  margin: 10px;
+
+  font-size: 18px;
+  color: var(--dark-green);
+  background-color: var(--orange);
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 15px 1px rgb(0 0 0 / 75%);
+
 }

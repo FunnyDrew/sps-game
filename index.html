@@ -13,18 +13,34 @@
     </header>
         
     <div class="container"> 
-        <div class="game-intro active">
-            <btn class="lng corner">EN</btn>           
-            <div class="game-info">
-                <p class="game-info-name">Rock Paper Scissors Game</p>
-                <p class="game-info-make">Make a move to choose one of the variants: stone, scissors or paper. The computer will choose your choice at random.</p>
-                <p class="game-info-rs">Rock blunt scissors</p>
-                <p class="game-info-sp">Scissors blunt paper</p>
-                <p class="game-info-pr">Paper wraps a rock.</p>
-                <p class="game-info-win">The winner of step is awarded 1 point. Whoever gets 5 points fastest wins.</p>
+        <div class="game-modal">
+            <div class="game-modal-windows">
+                <btn class="lng corner">EN</btn>           
+                <div class="game-info">
+                    <p class="game-info-name">Rock Paper Scissors Game</p>
+                    <p class="game-info-make">Make a move to choose one of the variants: stone, scissors or paper. The computer will choose your choice at random.</p>
+                    <ul>
+                        <li class="game-info-rs">Rock blunt scissors</li>
+                        <li class="game-info-sp">Scissors blunt paper</li>
+                        <li class="game-info-pr">Paper wraps a rock.</li>
+                    </ul>
+                    <p class="game-info-win">The winner of step is awarded 1 point. Whoever gets 5 points fastest wins.</p>
+                </div>
+                <button class="game-start">Start Game</button>
             </div>
-            <btn class="game-start">Start Game</btn>
-        </div>    
+            
+        </div>
+        <div class="game-modal">
+            <div class="game-modal-windows">
+                         
+                <div class="game-result-info">
+                    <p>You win with score</p>
+                    <p>5:1</p>                    
+                </div>
+                <button class="game-start">Play again</button>
+            </div>
+            
+        </div> 
 
         <button class="lng">EN</button>
 
