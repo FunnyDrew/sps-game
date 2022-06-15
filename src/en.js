@@ -9,13 +9,29 @@ export default {
         gameInfoPR: 'Paper wraps a rock',
         gameInfoWin: 'The winner of step is awarded 1 point. Whoever gets 5 points fastest wins.',
       },
+      gameStartBtn: 'Start Game',
+      gameAgainBtn: 'Play again',
+      gamePlayerOneName: 'You',
+      gamePlayerTwoName: 'Computer',
+      gameEndPhrase: 'win with scores',
       gameCards:{
         rock: '👊',
         paper: '🤚',
         scissors: '✌️',
       },
-      ui: {
+      ui: {       
         header: 'Rock Paper Scissors',
+        lng: 'EN',
+        gamePlayTitle: 'Game Play',
+        rockBitsScissors: 'Rock bits Scissors',
+        paperBitsRock: 'Paper bits Rock',
+        scissorsCutPaper: 'Scissors cut paper',
+        scoresPlayTitle: 'Scores',
+        playerScoresTitle: 'You',
+        computerScoresTitle: 'Computer',
+        playersChoiceTitle: 'Players Choice',
+        gameCardsTitle: 'Game Cards',
+        gameCardsInfo: 'Select your next step',
       }
     }
   }
