@@ -1,10 +1,9 @@
-//import i18next from "i18next";
 import './style.css';
 
 const staticRender = (i18) => {
   const title = document.querySelector('title');
   title.textContent = i18.t('title');
-  
+
   const header = document.querySelector('header > p');
   header.textContent = i18.t('ui.header');
 
@@ -34,8 +33,8 @@ const staticRender = (i18) => {
 
   const gameCardsInfo = document.querySelector('.game-cards-info');
   gameCardsInfo.textContent = `(${i18.t('ui.gameCardsInfo')})`;
+};
 
+const fcn = () => {};
 
-}
-
-export { staticRender };
+export { staticRender, fcn };
