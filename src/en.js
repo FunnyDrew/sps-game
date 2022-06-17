@@ -28,6 +28,7 @@ export default {
       rockBitsScissors: 'Rock bits Scissors',
       paperBitsRock: 'Paper bits Rock',
       scissorsCutPaper: 'Scissors cut paper',
+      draw: 'DRAW',
       scoresPlayTitle: 'Scores',
       playerScoresTitle: 'You',
       computerScoresTitle: 'Computer',

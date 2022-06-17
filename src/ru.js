@@ -28,6 +28,7 @@ export default {
       rockBitsScissors: 'Камень побеждает Ножницы',
       paperBitsRock: 'Бумага побеждает Камень',
       scissorsCutPaper: 'Ножницы режут Бумагу',
+      draw: 'НИЧЬЯ',
       scoresPlayTitle: 'Очки',
       playerScoresTitle: 'Вы',
       computerScoresTitle: 'Компьютер',

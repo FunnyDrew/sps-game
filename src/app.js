@@ -47,8 +47,9 @@ export default () => {
       active: false,
     },
     gameplay: {
+      step: {madeStep: false},
       playerScores: 0,
-      compluterScores: 0,
+      computerScores: 0,
       playerChoice: '',
       computerChoice: '',
     }
@@ -56,16 +57,10 @@ export default () => {
 
   const makeComputerStep = () => gameCards[Math.floor(3*Math.random())];
 
-  const gameWatcher = onChange(state, (path, value) => {
-    if (path == 'gameplay.playerChoice') {
-      state.gameplay.computerChoice = makeComputerStep();
-      const [currentPlayerScore, currentComputerScore] = winLoseMap[state.gameplay.playerChoice][state.gameplay.computerChoice];
-      state.gameplay.playerScores += currentPlayerScore;
-      state.gameplay.compluterScores += currentComputerScore;
-      console.log(state.gameplay);
-      state.gameplay.playerChoice = '';
-    }    
-  })
+  const gameWatcher = onChange(state.gameplay.step, (path, value) => {
+    gamePlayRender(state, i18);
+    state.gameplay.step.madeStep = false;
+  });
 
   staticRender(i18);
 
@@ -79,6 +74,13 @@ export default () => {
 
   const gameBtn = document.querySelectorAll('.game-cards > button');
   gameBtn.forEach((btn) => btn.addEventListener('click',({target}) =>{
-    gameWatcher.gameplay.playerChoice = target.id;
+
+    state.gameplay.playerChoice = target.id;
+
+    state.gameplay.computerChoice = makeComputerStep();
+    const [currentPlayerScore, currentComputerScore] = winLoseMap[state.gameplay.playerChoice][state.gameplay.computerChoice];
+    state.gameplay.playerScores += currentPlayerScore;
+    state.gameplay.computerScores += currentComputerScore;
+    gameWatcher.madeStep = true;
   }));  
 };

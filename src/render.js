@@ -35,6 +35,19 @@ const staticRender = (i18) => {
   gameCardsInfo.textContent = `(${i18.t('ui.gameCardsInfo')})`;
 };
 
-const fcn = () => {};
+const gamePlayRender = (state, i18) => {
+  const playerChoice = document.querySelector('.player-choice');
+  playerChoice.textContent = i18.t(`gameCards.${state.gameplay.playerChoice}`)
+  const computerChoice = document.querySelector('.computer-choice');
+  computerChoice.textContent = i18.t(`gameCards.${state.gameplay.computerChoice}`);
 
-export { staticRender, fcn };
+  const playerScores = document.querySelector('.player-scores > p');
+  playerScores.textContent = state.gameplay.playerScores;
+  const computerScores = document.querySelector('.computer-scores > p');
+  computerScores.textContent = state.gameplay.computerScores;
+
+  const gamePlayContent = document.querySelector('.game-play-content');
+  console.log(gamePlayContent);
+};
+
+export { staticRender, gamePlayRender };
