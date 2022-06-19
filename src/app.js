@@ -63,6 +63,7 @@ export default () => {
   });
 
   staticRender(i18);
+  gamePlayRender(state, i18);
 
   const lngSwitcher = document.querySelector('button.lng-main');
   lngSwitcher.addEventListener('click', (e) => {
@@ -70,6 +71,7 @@ export default () => {
     state.ui.lng = state.ui.lng === 'ru' ? 'en' : 'ru';
     i18.changeLanguage(state.ui.lng);
     staticRender(i18);
+    gamePlayRender(state, i18);
   });
 
   const gameBtn = document.querySelectorAll('.game-cards > button');
