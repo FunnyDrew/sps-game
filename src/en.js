@@ -4,8 +4,8 @@ export default {
     gameInfo: {
       gameInfoName: 'Rock Paper Scissors Game',
       gameInfoMake:
-        'Make a move to choose one of the variants: stone, scissors or paper. The computer will choose your choice at random.',
-      gameInforRS: 'Rock blunt scissors',
+        'Make a move to choose one of the variants: stone, scissors or paper. The computer will choose it choice at random.',
+      gameInfoRS: 'Rock blunt scissors',
       gameInfoSP: 'Scissors blunt paper',
       gameInfoPR: 'Paper wraps a rock',
       gameInfoWin:
@@ -35,6 +35,10 @@ export default {
       playersChoiceTitle: 'Players Choice',
       gameCardsTitle: 'Game Cards',
       gameCardsInfo: 'Select your next step',
+    },
+    result: {
+      computer: "Computer win's with scores:",
+      you: 'You win with scores:',
     },
   },
 };
